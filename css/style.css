@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fbe8b3;
+}
+div {
+  cursor: pointer;
+}
+h1 {
+  font-family: "Amatic SC", cursive;
+  color: #264caa;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 3vh;
+}
+
+.row {
+  text-align: center;
+}
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #264caa;
+}
+
+.circle {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #58aae7;
+  border-radius: 50%;
+}
+
+.square {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #8cd6f4;
+}
+
+.triangle-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid #58aae7;
+}
+
+.octagon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #8cd6f4;
+  position: relative;
+}
+
+.octagon:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 29px solid #8cd6f4;
+  border-left: 29px solid #fbe8b3;
+  border-right: 29px solid #fbe8b3;
+  width: 42px;
+  height: 0;
+}
+
+.octagon:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 29px solid #8cd6f4;
+  border-left: 29px solid #fbe8b3;
+  border-right: 29px solid #fbe8b3;
+  width: 42px;
+  height: 0;
+}
+
+.heart {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #264caa;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+svg {
+  margin-bottom: -1vh;
+}
+footer {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #264caa;
+  width: 100vw;
+  height: 10vh;
+}
+footer span {
+  color: #c1ecf8;
+}
